@@ -17,17 +17,17 @@ Activity: Investigate the Code
 
 Questions:
 1. What happened to the content of `log.txt` when you ran the program the second time (while in 'w' mode)?
-   # Your Answer Here
+   # The orginal content was simply replaced with the new.
 
 2. What happened to the content of `log.txt` when you ran the program the third and fourth times (while in 'a' mode)?
-   # Your Answer Here
+   # Each time the program was ran "New entry" was added to the end of the file
 
 3. What is the key difference between 'w' (write) mode and 'a' (append) mode?
-   # Your Answer Here
+   # `w` mode overwrites the entire file, while `a` mode adds new content to the end of the file without deleting anything
 """
 
 # Change the mode below from "w" to "a" after the second run
-file = open("log.txt", "w")
+file = open("log.txt", "a")
 
 file.write("New entry.\n")
 
